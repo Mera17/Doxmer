@@ -62,7 +62,7 @@
 			<script>
 					function enviarWhatsApp(producto, precio) {
 						const numeroTelefono = "51923953605"; // Reemplaza con tu número de WhatsApp
-						const mensaje = `Hola, estoy interesado en este servicio: ${producto} (s/. ${precio}).`;
+						const mensaje = `Hola, estoy interesado en este servicio: ${producto} por s/. ${precio}).`;
 						const url = `https://wa.me/${numeroTelefono}?text=${encodeURIComponent(mensaje)}`;
 						window.open(url, '_blank'); // Abre WhatsApp en una nueva pestaña
 					}
@@ -225,8 +225,7 @@
 						</div>
 
 			<!-- Main -->
-			<div class="wrapper style2">
-				<article id="main" class="container special">
+			<article id="main" class="container special">
     <a href="#no" class="image featured"><img src="images/promos.png" alt="" /></a>
     <div class="wrapper style2">
         <header>
@@ -243,9 +242,8 @@
                 </ul>
                 <p><strong>Normal: <span style="text-decoration: line-through;">S/. 52</span></strong></p>
                 <p><strong>Oferta: S/. 30</strong></p>
-                <p><button onclick="enviarWhatsApp('Promoción 1', 30)" class="btn-pedir-ahora">Pedir ahora</button></p>
+                <p><button onclick="pedirPromocion('Promoción 1', 30)" class="btn-pedir-ahora">Pedir promoción</button></p>
             </div>
-            
             <div class="promotion">
                 <p><strong>Promoción 2:</strong></p>
                 <ul>
@@ -257,9 +255,8 @@
                 </ul>
                 <p><strong>Normal: <span style="text-decoration: line-through;">S/. 92</span></strong></p>
                 <p><strong>Todo por S/. 50</strong></p>
-                <p><button onclick="enviarWhatsApp('Promoción 2', 50)" class="btn-pedir-ahora">Pedir ahora</button></p>
+                <p><button onclick="pedirPromocion('Promoción 2', 50)" class="btn-pedir-ahora">Pedir promoción</button></p>
             </div>
-
             <div class="promotion">
                 <p><strong>Promoción 3:</strong></p>
                 <ul>
@@ -269,11 +266,10 @@
                     <li>x2 árbol genealógico en texto</li>
                     <li>x2 DNI virtual (azul o amarillo)</li>
                 </ul>
-                <p><strong>Normal: <span style="text-decoration: line-through;">S/. 144,5</span></strong></p>
+                <p><strong>Normal: <span style="text-decoration: line-through;">S/. 144.5</span></strong></p>
                 <p><strong>Todo por S/. 90</strong></p>
-                <p><button onclick="enviarWhatsApp('Promoción 3', 90)" class="btn-pedir-ahora">Pedir ahora</button></p>
+                <p><button onclick="pedirPromocion('Promoción 3', 90)" class="btn-pedir-ahora">Pedir promoción</button></p>
             </div>
-
             <div class="promotion">
                 <p><strong>Promoción 4:</strong></p>
                 <ul>
@@ -285,9 +281,8 @@
                 </ul>
                 <p><strong>Normal: <span style="text-decoration: line-through;">S/. 170</span></strong></p>
                 <p><strong>Todo por S/. 110</strong></p>
-                <p><button onclick="enviarWhatsApp('Promoción 4', 110)" class="btn-pedir-ahora">Pedir ahora</button></p>
+                <p><button onclick="pedirPromocion('Promoción 4', 110)" class="btn-pedir-ahora">Pedir promoción</button></p>
             </div>
-
             <div class="promotion">
                 <p><strong>Promoción 5:</strong></p>
                 <ul>
@@ -300,9 +295,8 @@
                 </ul>
                 <p><strong>Normal: <span style="text-decoration: line-through;">S/. 349</span></strong></p>
                 <p><strong>Todo por S/. 200</strong></p>
-                <p><button onclick="enviarWhatsApp('Promoción 5', 200)" class="btn-pedir-ahora">Pedir ahora</button></p>
+                <p><button onclick="pedirPromocion('Promoción 5', 200)" class="btn-pedir-ahora">Pedir promoción</button></p>
             </div>
-
             <div class="promotion">
                 <p><strong>Promoción 6:</strong></p>
                 <ul>
@@ -311,9 +305,8 @@
                 </ul>
                 <p><strong>Normal: <span style="text-decoration: line-through;">S/. 45</span></strong></p>
                 <p><strong>Todo por S/. 30</strong></p>
-                <p><button onclick="enviarWhatsApp('Promoción 6', 30)" class="btn-pedir-ahora">Pedir ahora</button></p>
+                <p><button onclick="pedirPromocion('Promoción 6', 30)" class="btn-pedir-ahora">Pedir promoción</button></p>
             </div>
-
             <div class="promotion">
                 <p><strong>Promoción 7:</strong></p>
                 <ul>
@@ -322,31 +315,34 @@
                 </ul>
                 <p><strong>Normal: <span style="text-decoration: line-through;">S/. 22.5</span></strong></p>
                 <p><strong>Oferta: S/. 18</strong></p>
-                <p><button onclick="enviarWhatsApp('Promoción 7', 18)" class="btn-pedir-ahora">Pedir ahora</button></p>
+                <p><button onclick="pedirPromocion('Promoción 7', 18)" class="btn-pedir-ahora">Pedir promoción</button></p>
             </div>
-
             <div class="promotion">
-                <p><strong>SUPER PROMOCIÓN (solo se puede comprar 1 vez por usuario)</strong></p>
+                <p><strong>SUPER PROMOCIÓN (solo se puede comprar 1 vez por usuario):</strong></p>
                 <ul>
                     <li>x15 foto (base de datos) + dni info</li>
                     <li>x2 foto (actualizada) + dni info</li>
                 </ul>
                 <p><strong>Normal: <span style="text-decoration: line-through;">S/. 73</span></strong></p>
                 <p><strong>Todo por S/. 35</strong></p>
-                <p><button onclick="enviarWhatsApp('SUPER PROMOCIÓN', 35)" class="btn-pedir-ahora">Pedir ahora</button></p>
+                <p><button onclick="pedirPromocion('SUPER PROMOCIÓN', 35)" class="btn-pedir-ahora">Pedir promoción</button></p>
             </div>
         </div>
     </div>
 </article>
 
 <script>
-    function enviarWhatsApp(promocion, precio) {
-        const numeroTelefono = "51923953605"; // Reemplaza con tu número
+    // Número de WhatsApp para contacto
+    const numeroTelefono = "51923953604"; // Reemplazar con tu número
+    
+    // Función para promociones
+    function pedirPromocion(promocion, precio) {
         const mensaje = `Hola, estoy interesado en la ${promocion} por S/. ${precio}.`;
         const url = `https://wa.me/${numeroTelefono}?text=${encodeURIComponent(mensaje)}`;
         window.open(url, '_blank'); // Abre WhatsApp en una nueva pestaña
     }
 </script>
+
 
 					
 				</article>
