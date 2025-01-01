@@ -62,7 +62,7 @@
 			<script>
 					function enviarWhatsApp(producto, precio) {
 						const numeroTelefono = "51923953605"; // Reemplaza con tu número de WhatsApp
-						const mensaje = `Hola, estoy interesado en este servicio: ${producto} por s/. ${precio})`;
+						const mensaje = `Hola, estoy interesado en este servicio: ${producto} por s/. ${precio}`;
 						const url = `https://wa.me/${numeroTelefono}?text=${encodeURIComponent(mensaje)}`;
 						window.open(url, '_blank'); // Abre WhatsApp en una nueva pestaña
 					}
@@ -333,11 +333,11 @@
 
 <script>
     // Número de WhatsApp para contacto
-    const numeroTelefono = "51923953604"; // Reemplazar con tu número
+    const numeroTelefono = "51923953605"; // Reemplazar con tu número
     
     // Función para promociones
     function pedirPromocion(promocion, precio) {
-        const mensaje = `Hola, estoy interesado en la ${promocion} por S/. ${precio}.`;
+        const mensaje = `Hola, estoy interesado en la ${promocion} por S/. ${precio}`;
         const url = `https://wa.me/${numeroTelefono}?text=${encodeURIComponent(mensaje)}`;
         window.open(url, '_blank'); // Abre WhatsApp en una nueva pestaña
     }
