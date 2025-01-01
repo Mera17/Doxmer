@@ -59,6 +59,15 @@
 					</header>
 				</section>
 
+			<script>
+					function enviarWhatsApp(producto, precio) {
+						const numeroTelefono = "51923953605"; // Reemplaza con tu número de WhatsApp
+						const mensaje = `Hola, estoy interesado en el producto: ${producto} (s/. ${precio}).`;
+						const url = `https://wa.me/${numeroTelefono}?text=${encodeURIComponent(mensaje)}`;
+						window.open(url, '_blank'); // Abre WhatsApp en una nueva pestaña
+					}
+				</script>
+
 			<!-- Carousel -->
 				<section class="carousel">
 					<div class="reel">
@@ -68,51 +77,51 @@
 							<header>
 								<h3><a href="#no">Foto (base de datos) + dni info</a></h3>
 							</header>
-							<p>Se muetra su foto de rostro, su número de DNI, fecha de nacimiento, estatura, donde nació, estado civil, nombre de sus padres, dirección, y ubigeos. ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</p>
+							<p>Se muestra su foto de rostro, su número de DNI, fecha de nacimiento, estatura, donde nació, estado civil, nombre de sus padres, dirección, y ubigeos.</p>
 							<div class="price-tag">s/. 4</div>
-							<p><a href="https://wa.me/qr/WGBCZFFYYHUBP1" class="btn-pedir-ahora">Pedir ahora</a></p>
+							<p><button onclick="enviarWhatsApp('Foto (base de datos) + dni info', 4)" class="btn-pedir-ahora">Pedir ahora</button></p>
 						</article>
-
+					
 						<article>
 							<a href="#no" class="image featured"><img src="images/dniactu.png" alt="" /></a>
 							<header>
 								<h3><a href="#no">Foto (actualizada) + dni info</a></h3>
 							</header>
-							<p>Se muetra su foto de rostro actualizada en tiempo real, su número de DNI, fecha de nacimiento, estatura, donde nació, estado civil, nombre de sus padres, dirección, ubigeos, actas y número de hijos. </p>
+							<p>Se muestra su foto de rostro actualizada en tiempo real, su número de DNI, fecha de nacimiento, estatura, donde nació, estado civil, nombre de sus padres, dirección, ubigeos, actas y número de hijos.</p>
 							<div class="price-tag">s/. 6.5</div>
-							<p><a href="https://wa.me/qr/WGBCZFFYYHUBP1" class="btn-pedir-ahora">Pedir ahora</a></p>
+							<p><button onclick="enviarWhatsApp('Foto (actualizada) + dni info', 6.5)" class="btn-pedir-ahora">Pedir ahora</button></p>
 						</article>
-
+					
 						<article>
 							<a href="#no" class="image featured"><img src="images/huellas.png" alt="" /></a>
 							<header>
 								<h3><a href="#no">Foto (actualizada) + dni info + firma + huellas digitales</a></h3>
 							</header>
-							<p>Se muetra su foto de rostro actualizada en tiempo real, su número de DNI, firma, huellas digitales, fecha de nacimiento, estatura, donde nació, estado civil, nombre de sus padres, dirección, ubigeos, actas y número de hijos.</p>
+							<p>Se muestra su foto de rostro actualizada en tiempo real, su número de DNI, firma, huellas digitales, fecha de nacimiento, estatura, donde nació, estado civil, nombre de sus padres, dirección, ubigeos, actas y número de hijos.</p>
 							<div class="price-tag">s/. 9</div>
-							<p><a href="https://wa.me/qr/WGBCZFFYYHUBP1" class="btn-pedir-ahora">Pedir ahora</a></p>
+							<p><button onclick="enviarWhatsApp('Foto (actualizada) + dni info + firma + huellas digitales', 9)" class="btn-pedir-ahora">Pedir ahora</button></p>
 						</article>
-
+					
 						<article>
 							<a href="#no" class="image featured"><img src="images/arbol.jpeg" alt="" /></a>
 							<header>
 								<h3><a href="#no">Árbol genealógico visual (imagen)</a></h3>
 							</header>
-							<p>Se muetra todos los familiares cercanos, incluyendo sus rostros, nombres completos, número de DNI, edad y parentesco. (el número de familiares varía en cada persona) </p>
+							<p>Se muestra todos los familiares cercanos, incluyendo sus rostros, nombres completos, número de DNI, edad y parentesco.</p>
 							<div class="price-tag">s/. 18</div>
-							<p><a href="https://wa.me/qr/WGBCZFFYYHUBP1" class="btn-pedir-ahora">Pedir ahora</a></p>
+							<p><button onclick="enviarWhatsApp('Árbol genealógico visual (imagen)', 18)" class="btn-pedir-ahora">Pedir ahora</button></p>
 						</article>
-
+					
 						<article>
 							<a href="#no" class="image featured"><img src="images/arbolg.png" alt="" /></a>
 							<header>
 								<h3><a href="#no">Árbol genealógico en texto</a></h3>
 							</header>
-							<p>Se muetra a todos los familiares cercanos en texto, nombres completos, número de DNI, fecha de nacimiento y parentesco.</p>
+							<p>Se muestra a todos los familiares cercanos en texto, nombres completos, número de DNI, fecha de nacimiento y parentesco.</p>
 							<div class="price-tag">s/. 8</div>
-							<p><a href="https://wa.me/qr/WGBCZFFYYHUBP1" class="btn-pedir-ahora">Pedir ahora</a></p>
+							<p><button onclick="enviarWhatsApp('Árbol genealógico en texto', 8)" class="btn-pedir-ahora">Pedir ahora</button></p>
 						</article>
-
+					
 						<article>
 							<a href="#no" class="image featured"><img src="images/cel.png" alt="" /></a>
 							<header>
@@ -120,19 +129,19 @@
 							</header>
 							<p>Con tan solo número de celular podrás saber su foto de rostro, su número de DNI, fecha de nacimiento, estatura, donde nació, estado civil, nombre de sus padres, dirección, y ubigeos.</p>
 							<div class="price-tag">s/. 8</div>
-							<p><a href="https://wa.me/qr/WGBCZFFYYHUBP1" class="btn-pedir-ahora">Pedir ahora</a></p>
+							<p><button onclick="enviarWhatsApp('Información con número de celular (titular)', 8)" class="btn-pedir-ahora">Pedir ahora</button></p>
 						</article>
-
+					
 						<article>
 							<a href="#no" class="image featured"><img src="images/trabajos.png" alt="" /></a>
 							<header>
-								<h3><a href="#no">Registro laboral (cuanto gana y donde trabajó)</a></h3>
+								<h3><a href="#no">Registro laboral (cuánto gana y dónde trabajó)</a></h3>
 							</header>
-							<p>Podras ver todos los trabajos en el cual ha estado en planilla, cuanto gana, el mes que más genero dinero y el que menos, la fecha y la empresa o lugar donde consiguio el sueldo.</p>
+							<p>Podrás ver todos los trabajos en el cual ha estado en planilla, cuánto gana, el mes que más generó dinero y el que menos, la fecha y la empresa o lugar donde consiguió el sueldo.</p>
 							<div class="price-tag">s/. 6</div>
-							<p><a href="https://wa.me/qr/WGBCZFFYYHUBP1" class="btn-pedir-ahora">Pedir ahora</a></p>
+							<p><button onclick="enviarWhatsApp('Registro laboral (cuánto gana y dónde trabajó)', 6)" class="btn-pedir-ahora">Pedir ahora</button></p>
 						</article>
-
+					
 						<article>
 							<a href="#no" class="image featured"><img src="images/dniv.png" alt="" /></a>
 							<header>
@@ -140,27 +149,27 @@
 							</header>
 							<p>Duplicado del DNI de la parte delantera y posterior con todos los datos correspondientes.</p>
 							<div class="price-tag">s/. 8</div>
-							<p><a href="https://wa.me/qr/WGBCZFFYYHUBP1" class="btn-pedir-ahora">Pedir ahora</a></p>
+							<p><button onclick="enviarWhatsApp('DNI virtual (azul o amarillo)', 8)" class="btn-pedir-ahora">Pedir ahora</button></p>
 						</article>
-
+					
 						<article>
 							<a href="#no" class="image featured"><img src="images/c4.png" alt="" /></a>
 							<header>
 								<h3><a href="#no">Documento C4 (pdf)</a></h3>
 							</header>
-							<p>Se muetra una imagen que contiene toda la información del DNI en formato pdf incluyendo huellas y firma.ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ<p>
+							<p>Se muestra una imagen que contiene toda la información del DNI en formato pdf incluyendo huellas y firma.</p>
 							<div class="price-tag">s/. 10</div>
-							<p><a href="https://wa.me/qr/WGBCZFFYYHUBP1" class="btn-pedir-ahora">Pedir ahora</a></p>
+							<p><button onclick="enviarWhatsApp('Documento C4 (pdf)', 10)" class="btn-pedir-ahora">Pedir ahora</button></p>
 						</article>
-
+					
 						<article>
 							<a href="#no" class="image featured"><img src="images/propi.png" alt="" /></a>
 							<header>
 								<h3><a href="#no">Sunarp Propiedades</a></h3>
 							</header>
-							<p>Se muetran todas las propiedades, que esten registradas en la Sunarp a su nombre, bienes inmuebles, como terrenos, casas, departamentos, entre otros.                    </p>
+							<p>Se muestran todas las propiedades que están registradas en la Sunarp a su nombre: bienes inmuebles como terrenos, casas, departamentos, entre otros.</p>
 							<div class="price-tag">s/. 8</div>
-							<p><a href="https://wa.me/qr/WGBCZFFYYHUBP1" class="btn-pedir-ahora">Pedir ahora</a></p>
+							<p><button onclick="enviarWhatsApp('Sunarp Propiedades', 8)" class="btn-pedir-ahora">Pedir ahora</button></p>
 						</article>
 						<article>
 							<a href="#no" class="image featured"><img src="images/antecional.png" alt="" /></a>
