@@ -3347,6 +3347,27 @@ footer .button:hover {
     line-height: 40px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
+/* Centrado solo para la sección de actas */
+.actas-section .btn-container-actas {
+    text-align: center; /* Centra el botón */
+    margin-top: 15px;   /* Espacio superior opcional */
+}
+
+.actas-section .btn-pedir-ahora-actas {
+    display: inline-block;
+    padding: 8px 16px; /* Botón más pequeño */
+    background-color: #ab3333; /* Color del fondo */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 20px; /* Bordes circulados */
+    font-size: 14px; /* Texto más pequeño */
+    font-weight: bold; /* Opcional: texto más destacado */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.actas-section .btn-pedir-ahora-actas:hover {
+    background-color: #ff0000; /* Color al pasar el mouse */
+}
 
 
 
