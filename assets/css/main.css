@@ -2176,7 +2176,7 @@ input, select, textarea {
 
 	#header {
 		position: relative;
-		background-image: url("../../images/header.jpg");
+		background-image: url("../../images/fondo12.jpeg");
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;
@@ -3285,7 +3285,7 @@ header p {
 /* Estilo para el footer */
 footer .button {
     padding: 10px 20px;
-    background-color: #e03d28;
+    background-color: #153039;
     color: rgb(255, 251, 251);
     text-decoration: none;
     border-radius: 25px;
@@ -3294,7 +3294,7 @@ footer .button {
 }
 
 footer .button:hover {
-    background-color: #d6624d;
+    background-color: ##193935;
 }
 
 /* Estilo para el Modal */
