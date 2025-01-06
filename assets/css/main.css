@@ -3367,6 +3367,23 @@ footer .button:hover {
 .actas-section .btn-pedir-ahora-actas:hover {
     background-color: #ff0000; /* Color al pasar el mouse */
 }
+/* Agregar estilo para el efecto de desvanecimiento */
+.fade-in {
+  opacity: 0;
+  animation: fadeInEffect 2s ease-in-out forwards;
+}
+
+/* Definir la animación */
+@keyframes fadeInEffect {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 
 
