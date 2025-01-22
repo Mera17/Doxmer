@@ -42,7 +42,6 @@
         }
     </style>
 </head>
-<body>
     <h1 style="text-align: center;">
         <a href="#" id="logo-container" onclick="event.preventDefault();" style="display: inline-block; max-width: 200px;">
             <img id="logo" src="images/logo1.png" alt="Doxmer" style="width: 100%; height: auto;">
@@ -50,7 +49,19 @@
     </h1>
     <p style="text-align: center; font-size: 28px; margin-top: 10px; font-family: 'Orbitron', sans-serif; letter-spacing: 2px; text-transform: uppercase;">Doxmer</p>         
 </body>
+ <!-- Contenedor de botones de música al principio de la página -->
+ <div style="text-align: center; margin-top: 20px;">
+	<audio id="musica" loop>
+		<source src="musicaa.mp3" type="audio/mpeg">
+	</audio>
+	<button onclick="document.getElementById('musica').play()" style="font-size: 12px; padding: 5px 10px; background-color: rgb(38, 33, 33); color: white; border: none; border-radius: 5px; cursor: pointer; margin-bottom: 10px;">
+		Reproducir música
+	</button>
+	<button onclick="document.getElementById('musica').pause()" style="font-size: 12px; padding: 5px 10px; background-color: rgb(38, 33, 33); color: white; border: none; border-radius: 5px; cursor: pointer;">
+		Pausar música
+	</button>
 </div>
+
 						<hr />
 <p class="fade-in">La mejor plataforma para sacar información de cualquier persona al nivel nacional de manera rápida y eficaz, con tan solo sus nombres completos, número de celular o DNI.</p>
 
