@@ -11,46 +11,57 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<!-- Favicon -->
-		<link rel="icon" type="image/png" href="images/logo1.png" />
-		<!-- Fuentes y estilos -->
-		<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
-		<style>
-			/* Estilo para la animación de aparición suave */
-			#logo {
-				opacity: 0; /* Inicia invisible */
-				transform: translateY(-20px); /* Desplaza hacia arriba inicialmente */
-				animation: fadeIn 1s ease-in-out forwards; /* Aplica la animación */
-			}
-
-			/* Definición de la animación */
-			@keyframes fadeIn {
-				to {
-					opacity: 1; /* Termina visible */
-					transform: translateY(0); /* Vuelve a su posición original */
-				}
-			}
-		</style>
 	</head>
-	<body class="homepage is-preload">
-		<div id="page-wrapper">
+		<!-- Favicon -->
+	<link rel="icon" type="image/png" href="images/logo1.png" />
+</head>
+<body class="homepage is-preload">
+	<div id="page-wrapper">
 			<!-- Header -->
 			<div id="header">
 				<!-- Inner -->
 				<div class="inner">
 					<header>
-						<!-- Reemplazando el texto "Doxmer" por una imagen -->
-						<h1 style="text-align: center;">
-							<a href="#" id="logo-container" onclick="event.preventDefault();" style="display: inline-block; max-width: 200px;">
-								<img id="logo" src="images/logo1.png" alt="Doxmer" style="width: 100%; height: auto;">
-							</a>
-						</h1>
-						<p style="text-align: center; font-size: 28px; margin-top: 10px; font-family: 'Orbitron', sans-serif; letter-spacing: 2px; text-transform: uppercase;">Doxmer</p>
-					</header>
-				</div>
-			</div>
-		</div>
-	</body>
+		<!-- Reemplazando el texto "Doxmer" por una imagen -->
+				<head>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilo para la animación de aparición suave */
+        #logo {
+            opacity: 0; /* Inicia invisible */
+            transform: translateY(-20px); /* Desplaza hacia arriba inicialmente */
+            animation: fadeIn 1s ease-in-out forwards; /* Aplica la animación */
+        }
+
+        /* Definición de la animación */
+        @keyframes fadeIn {
+            to {
+                opacity: 1; /* Termina visible */
+                transform: translateY(0); /* Vuelve a su posición original */
+            }
+        }
+    </style>
+</head>
+    <h1 style="text-align: center;">
+        <a href="#" id="logo-container" onclick="event.preventDefault();" style="display: inline-block; max-width: 200px;">
+            <img id="logo" src="images/logo1.png" alt="Doxmer" style="width: 100%; height: auto;">
+        </a>
+    </h1>
+    <p style="text-align: center; font-size: 28px; margin-top: 10px; font-family: 'Orbitron', sans-serif; letter-spacing: 2px; text-transform: uppercase;">Doxmer</p>         
+</body>
+ <!-- Contenedor de botones de música al principio de la página -->
+ <div style="text-align: center; margin-top: 15px;">
+	<audio id="musica" loop>
+		<source src="musicaa.mp3" type="audio/mpeg">
+	</audio>
+	<button onclick="document.getElementById('musica').play()" style="font-size: 12px; padding: 5px 10px; background-color: rgb(38, 33, 33); color: white; border: none; border-radius: 5px; cursor: pointer; margin-bottom: 10px;">
+		Reproducir música
+	</button>
+	<button onclick="document.getElementById('musica').pause()" style="font-size: 12px; padding: 5px 10px; background-color: rgb(38, 33, 33); color: white; border: none; border-radius: 5px; cursor: pointer;">
+		Pausar música
+	</button>
+</div>
+
 						<hr />
 <p class="fade-in">La mejor plataforma para sacar información de cualquier persona al nivel nacional de manera rápida y eficaz, con tan solo sus nombres completos, número de celular o DNI.</p>
 
