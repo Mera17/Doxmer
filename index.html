@@ -11,45 +11,46 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
 		<!-- Favicon -->
-	<link rel="icon" type="image/png" href="images/logo1.png" />
-</head>
-<body class="homepage is-preload">
-	<div id="page-wrapper">
+		<link rel="icon" type="image/png" href="images/logo1.png" />
+		<!-- Fuentes y estilos -->
+		<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+		<style>
+			/* Estilo para la animación de aparición suave */
+			#logo {
+				opacity: 0; /* Inicia invisible */
+				transform: translateY(-20px); /* Desplaza hacia arriba inicialmente */
+				animation: fadeIn 1s ease-in-out forwards; /* Aplica la animación */
+			}
+
+			/* Definición de la animación */
+			@keyframes fadeIn {
+				to {
+					opacity: 1; /* Termina visible */
+					transform: translateY(0); /* Vuelve a su posición original */
+				}
+			}
+		</style>
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
 			<!-- Header -->
 			<div id="header">
 				<!-- Inner -->
 				<div class="inner">
 					<header>
-		<!-- Reemplazando el texto "Doxmer" por una imagen -->
-				<head>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
-    <style>
-        /* Estilo para la animación de aparición suave */
-        #logo {
-            opacity: 0; /* Inicia invisible */
-            transform: translateY(-20px); /* Desplaza hacia arriba inicialmente */
-            animation: fadeIn 1s ease-in-out forwards; /* Aplica la animación */
-        }
-
-        /* Definición de la animación */
-        @keyframes fadeIn {
-            to {
-                opacity: 1; /* Termina visible */
-                transform: translateY(0); /* Vuelve a su posición original */
-            }
-        }
-    </style>
-</head>
-    <h1 style="text-align: center;">
-        <a href="#" id="logo-container" onclick="event.preventDefault();" style="display: inline-block; max-width: 200px;">
-            <img id="logo" src="images/logo1.png" alt="Doxmer" style="width: 100%; height: auto;">
-        </a>
-    </h1>
-    <p style="text-align: center; font-size: 28px; margin-top: 10px; font-family: 'Orbitron', sans-serif; letter-spacing: 2px; text-transform: uppercase;">Doxmer</p>         
-</body>
-</div>
+						<!-- Reemplazando el texto "Doxmer" por una imagen -->
+						<h1 style="text-align: center;">
+							<a href="#" id="logo-container" onclick="event.preventDefault();" style="display: inline-block; max-width: 200px;">
+								<img id="logo" src="images/logo1.png" alt="Doxmer" style="width: 100%; height: auto;">
+							</a>
+						</h1>
+						<p style="text-align: center; font-size: 28px; margin-top: 10px; font-family: 'Orbitron', sans-serif; letter-spacing: 2px; text-transform: uppercase;">Doxmer</p>
+					</header>
+				</div>
+			</div>
+		</div>
+	</body>
 						<hr />
 <p class="fade-in">La mejor plataforma para sacar información de cualquier persona al nivel nacional de manera rápida y eficaz, con tan solo sus nombres completos, número de celular o DNI.</p>
 
