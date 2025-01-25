@@ -158,6 +158,48 @@
 							</div>
 							<p><button onclick="enviarWhatsApp('Foto + DNI info', 4)" class="btn-pedir-ahora">Pedir ahora</button></p>
 						</article>
+						<style>
+							/* Animación de rebote para el precio */
+							@keyframes bounce {
+								0%, 100% {
+									transform: translateY(0);
+								}
+								50% {
+									transform: translateY(-10px);
+								}
+							}
+						
+							/* Animación de latido para los botones */
+							@keyframes pulse {
+								0%, 100% {
+									transform: scale(1);
+								}
+								50% {
+									transform: scale(1.1);
+								}
+							}
+						
+							/* Animación para todos los precios */
+							.price-tag {
+								background: linear-gradient(90deg, rgba(255, 87, 34, 0.85), rgba(255, 152, 0, 0.85));
+								color: #fff;
+								font-size: 0.75em;
+								font-weight: bold;
+								padding: 4px 6px;
+								text-align: center;
+								border-radius: 8px;
+								display: inline-block;
+								box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+								text-transform: uppercase;
+								letter-spacing: 1px;
+								animation: bounce 1.5s infinite;
+							}
+						
+							/* Animación para todos los botones de pedir ahora */
+							.btn-pedir-ahora {
+								animation: pulse 1.5s infinite;
+							}
+						</style>
 						<article>
 							<a href="#no" class="image featured"><img src="images/huellas.png" alt="" /></a>
 							<header>
