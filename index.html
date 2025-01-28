@@ -194,12 +194,12 @@
 								box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 								text-transform: uppercase;
 								letter-spacing: 1px;
-								animation: bounce 1.5s infinite;
+								animation: bounce 2s infinite;
 							}
 						
 							/* Animación para todos los botones de pedir ahora */
 							.btn-pedir-ahora {
-								animation: pulse 1.5s infinite;
+								animation: pulse 3.5s infinite;
 							}
 						</style>
 						<article>
@@ -358,11 +358,38 @@
 								<h3><a href="#no">Doxeo completo a una persona</a></h3>
 							</header>
 							<p>Incluye estos servicios: Foto de rostro + dni info + firma + huellas digitales, Árbol genealógico en texto, Registro laboral (cuánto gana y dónde trabajó), DNI virtual, Documento C4, Sunarp Propiedades, Reporte migratorio, Deudas, Antecendes policiales, judiciales y penales.</p>
-							<div class="price-tag" style="background: linear-gradient(90deg, rgba(0, 0, 0, 0.85), rgba(157, 0, 0, 0.85)); color: #fff; font-size: 0.75em; font-weight: bold; padding: 4px 6px; text-align: center; border-radius: 8px; display: inline-block; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); text-transform: uppercase; letter-spacing: 1px; animation: bounce 1.5s infinite;">
-								S/. 30
+							
+							<div class="price-tag" style="background: linear-gradient(45deg, rgba(255, 0, 0, 0.9), rgba(0, 0, 0, 0.9)); color: #fff; font-size: 0.8em; font-weight: bold; padding: 6px 10px; text-align: center; border-radius: 12px; display: inline-block; box-shadow: 0 8px 16px rgba(255, 99, 71, 0.5); text-transform: uppercase; letter-spacing: 2px; animation: glow 2s infinite alternate, floatPrice 2s ease-in-out infinite;">
+								<span style="font-size: 1em; text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);">S/. 30</span>
 							</div>
+						
 							<p><button onclick="enviarWhatsApp('Doxeo completo a una persona', 30)" class="btn-pedir-ahora">Pedir ahora</button></p>
 						</article>
+						<style>
+						@keyframes glow {
+							0% {
+								box-shadow: 0 8px 16px rgba(255, 99, 71, 0.5), 0 0 10px rgba(255, 99, 71, 0.5);
+							}
+							50% {
+								box-shadow: 0 8px 20px rgba(255, 165, 0, 0.7), 0 0 15px rgba(255, 165, 0, 0.7);
+							}
+							100% {
+								box-shadow: 0 8px 16px rgba(255, 99, 71, 0.5), 0 0 10px rgba(255, 99, 71, 0.5);
+							}
+						}
+						
+						@keyframes floatPrice {
+							0% {
+								transform: translateY(0);
+							}
+							50% {
+								transform: translateY(-3px);
+							}
+							100% {
+								transform: translateY(0);
+							}
+						}
+						</style>
 						<article>
 							<a href="#no" class="image featured"><img src="images/antecional.png" alt="" /></a>
 							<header>
