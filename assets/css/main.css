@@ -3365,7 +3365,7 @@ footer .button:hover {
 }
 
 .actas-section .btn-pedir-ahora-actas:hover {
-    background-color: #ff0000; /* Color al pasar el mouse */
+    background-color: #c31515; /* Color al pasar el mouse */
 }
 /* Agregar estilo para el efecto de desvanecimiento */
 .fade-in {
@@ -3383,6 +3383,27 @@ footer .button:hover {
     opacity: 1;
     transform: translateY(0);
   }
+}
+@keyframes floatButton {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0px); }
+}
+
+.btn-pedir-ahora-actas {
+    display: inline-block;
+    background-color: #ff4500;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    animation: floatButton 2s ease-in-out infinite;
+}
+
+.btn-pedir-ahora-actas:hover {
+    background-color: #e63900;
 }
 
 
