@@ -3405,6 +3405,23 @@ footer .button:hover {
 .btn-pedir-ahora-actas:hover {
     background-color: #e63900;
 }
+@keyframes moveSideToSide {
+    0% {
+        transform: translateX(-10px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(-10px);
+    }
+}
+
+.button {
+    display: inline-block;
+    position: relative;
+    animation: moveSideToSide 2s infinite ease-in-out;
+}
 
 
 
